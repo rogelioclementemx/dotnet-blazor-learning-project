@@ -1,0 +1,26 @@
+# Archivos de build
+bin/
+obj/
+
+# Archivos de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Configuración de VS Code
+.vscode/
+
+# Configuración de Visual Studio
+*.vs/
+
+# Archivos de sistema
+*.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
