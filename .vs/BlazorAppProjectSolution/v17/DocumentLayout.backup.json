@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rogelio.clemente\\source\\repos\\BlazorAppProjectSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3B511865-A31F-43B8-840A-D9075EB1B5D1}|BlazorAppProject\\BlazorAppProject.csproj|c:\\users\\rogelio.clemente\\source\\repos\\blazorappprojectsolution\\blazorappproject\\components\\pages\\pizzastore\\pizzastorenavmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3B511865-A31F-43B8-840A-D9075EB1B5D1}|BlazorAppProject\\BlazorAppProject.csproj|solutionrelative:blazorappproject\\components\\pages\\pizzastore\\pizzastorenavmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B511865-A31F-43B8-840A-D9075EB1B5D1}|BlazorAppProject\\BlazorAppProject.csproj|c:\\users\\rogelio.clemente\\source\\repos\\blazorappprojectsolution\\blazorappproject\\components\\pages\\pizzastore\\pizzastorenavmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B511865-A31F-43B8-840A-D9075EB1B5D1}|BlazorAppProject\\BlazorAppProject.csproj|solutionrelative:blazorappproject\\components\\pages\\pizzastore\\pizzastorenavmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PizzaStoreNavMenu.razor.css",
+              "DocumentMoniker": "C:\\Users\\rogelio.clemente\\source\\repos\\BlazorAppProjectSolution\\BlazorAppProject\\Components\\Pages\\PizzaStore\\PizzaStoreNavMenu.razor.css",
+              "RelativeDocumentMoniker": "BlazorAppProject\\Components\\Pages\\PizzaStore\\PizzaStoreNavMenu.razor.css",
+              "ToolTip": "C:\\Users\\rogelio.clemente\\source\\repos\\BlazorAppProjectSolution\\BlazorAppProject\\Components\\Pages\\PizzaStore\\PizzaStoreNavMenu.razor.css",
+              "RelativeToolTip": "BlazorAppProject\\Components\\Pages\\PizzaStore\\PizzaStoreNavMenu.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-03T21:50:33.206Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PizzaStoreNavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\rogelio.clemente\\source\\repos\\BlazorAppProjectSolution\\BlazorAppProject\\Components\\Pages\\PizzaStore\\PizzaStoreNavMenu.razor",
+              "RelativeDocumentMoniker": "BlazorAppProject\\Components\\Pages\\PizzaStore\\PizzaStoreNavMenu.razor",
+              "ToolTip": "C:\\Users\\rogelio.clemente\\source\\repos\\BlazorAppProjectSolution\\BlazorAppProject\\Components\\Pages\\PizzaStore\\PizzaStoreNavMenu.razor",
+              "RelativeToolTip": "BlazorAppProject\\Components\\Pages\\PizzaStore\\PizzaStoreNavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T21:40:33.654Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

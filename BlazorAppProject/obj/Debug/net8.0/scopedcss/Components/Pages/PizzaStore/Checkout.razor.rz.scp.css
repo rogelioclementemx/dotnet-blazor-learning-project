@@ -1,0 +1,38 @@
+.checkout-button[b-t6k1hffm7m] {
+    margin: auto;
+    display: block;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 0.4rem 1.2rem;
+}
+
+.checkout-cols[b-t6k1hffm7m] {
+    display: flex;
+}
+
+.checkout-cols h4[b-t6k1hffm7m] {
+    margin-bottom: 1.5rem;
+}
+
+.checkout-cols > div[b-t6k1hffm7m] {
+    flex: 1;
+    margin: 1rem;
+    border: 1px solid #ddd;
+    background: rgba(255,255,255,0.3);
+    padding: 1.25rem 1rem;
+}
+
+.checkout-cols > div:first-child[b-t6k1hffm7m] {
+    margin-left: 0;
+}
+
+.checkout-cols > div:last-child[b-t6k1hffm7m] {
+    margin-right: 0;
+}
+
+.main[b-t6k1hffm7m] {
+    flex-grow: 1;
+    overflow-y: auto;
+    background: linear-gradient(rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 80%);
+    padding: 1.5rem !important;
+}

@@ -1,0 +1,951 @@
+/* _content/BlazorAppProject/Components/Layout/MainLayout.razor.rz.scp.css */
+.page[b-2mzgrgci1b] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-2mzgrgci1b] {
+    flex: 1;
+}
+
+.sidebar[b-2mzgrgci1b] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-2mzgrgci1b] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-2mzgrgci1b]  a, .top-row[b-2mzgrgci1b]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row[b-2mzgrgci1b]  a:hover, .top-row[b-2mzgrgci1b]  .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row[b-2mzgrgci1b]  a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row[b-2mzgrgci1b] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-2mzgrgci1b]  a, .top-row[b-2mzgrgci1b]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-2mzgrgci1b] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-2mzgrgci1b] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-2mzgrgci1b] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-2mzgrgci1b]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-2mzgrgci1b], article[b-2mzgrgci1b] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+#blazor-error-ui[b-2mzgrgci1b] {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss[b-2mzgrgci1b] {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+/* _content/BlazorAppProject/Components/Layout/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-x0hv2n6cii] {
+    appearance: none;
+    cursor: pointer;
+    width: 3.5rem;
+    height: 2.5rem;
+    color: white;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") no-repeat center/1.75rem rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler:checked[b-x0hv2n6cii] {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.top-row[b-x0hv2n6cii] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-x0hv2n6cii] {
+    font-size: 1.1rem;
+}
+
+.bi[b-x0hv2n6cii] {
+    display: inline-block;
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+    top: -1px;
+    background-size: cover;
+}
+
+.bi-house-door-fill-nav-menu[b-x0hv2n6cii] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-house-door-fill' viewBox='0 0 16 16'%3E%3Cpath d='M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z'/%3E%3C/svg%3E");
+}
+
+.bi-plus-square-fill-nav-menu[b-x0hv2n6cii] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus-square-fill' viewBox='0 0 16 16'%3E%3Cpath d='M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z'/%3E%3C/svg%3E");
+}
+
+.bi-list-nested-nav-menu[b-x0hv2n6cii] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list-nested' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
+}
+
+.bi-check2-square-nav-menu[b-x0hv2n6cii] {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z'/><path d='m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0'/></svg>");
+}
+
+.bi-fork-knife-nav-menu[b-x0hv2n6cii] {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-fork-knife' viewBox='0 0 16 16'><path d='M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z'/></svg>");
+}
+
+.nav-item[b-x0hv2n6cii] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-x0hv2n6cii] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-x0hv2n6cii] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-x0hv2n6cii]  .nav-link {
+        color: #d7d7d7;
+        background: none;
+        border: none;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+        width: 100%;
+    }
+
+.nav-item[b-x0hv2n6cii]  a.active {
+    background-color: rgba(255,255,255,0.37);
+    color: white;
+}
+
+.nav-item[b-x0hv2n6cii]  .nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.nav-scrollable[b-x0hv2n6cii] {
+    display: none;
+}
+
+.navbar-toggler:checked ~ .nav-scrollable[b-x0hv2n6cii] {
+    display: block;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-x0hv2n6cii] {
+        display: none;
+    }
+
+    .nav-scrollable[b-x0hv2n6cii] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}
+/* _content/BlazorAppProject/Components/Pages/PizzaStore/Checkout.razor.rz.scp.css */
+.checkout-button[b-t6k1hffm7m] {
+    margin: auto;
+    display: block;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 0.4rem 1.2rem;
+}
+
+.checkout-cols[b-t6k1hffm7m] {
+    display: flex;
+}
+
+.checkout-cols h4[b-t6k1hffm7m] {
+    margin-bottom: 1.5rem;
+}
+
+.checkout-cols > div[b-t6k1hffm7m] {
+    flex: 1;
+    margin: 1rem;
+    border: 1px solid #ddd;
+    background: rgba(255,255,255,0.3);
+    padding: 1.25rem 1rem;
+}
+
+.checkout-cols > div:first-child[b-t6k1hffm7m] {
+    margin-left: 0;
+}
+
+.checkout-cols > div:last-child[b-t6k1hffm7m] {
+    margin-right: 0;
+}
+
+.main[b-t6k1hffm7m] {
+    flex-grow: 1;
+    overflow-y: auto;
+    background: linear-gradient(rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 80%);
+    padding: 1.5rem !important;
+}
+/* _content/BlazorAppProject/Components/Pages/PizzaStore/ConfigurePizzaDialog.razor.rz.scp.css */
+.dialog-container[b-34gsuivj45] {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2000;
+    display: flex;
+    animation: dialog-container-entry-b-34gsuivj45 0.2s;
+}
+
+@keyframes dialog-container-entry-b-34gsuivj45 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.dialog[b-34gsuivj45] {
+    background-color: white;
+    box-shadow: 0 0 12px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    z-index: 2000;
+    align-self: center;
+    margin: auto;
+    width: 700px;
+    max-height: calc(100% - 3rem);
+    animation: dialog-entry-b-34gsuivj45 0.4s;
+    animation-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+
+@keyframes dialog-entry-b-34gsuivj45 {
+    0% {
+        transform: translateY(30px) scale(0.95);
+    }
+
+    100% {
+        transform: translateX(0px) scale(1.0);
+    }
+}
+
+.dialog-title[b-34gsuivj45] {
+    background-color: #444;
+    color: #fff2cc;
+    padding: 1.3rem 2rem;
+}
+
+.dialog-title h2[b-34gsuivj45] {
+    color: white;
+    font-size: 1.4rem;
+    margin: 0;
+    font-family: 'Bahnschrift', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    line-height: 1.3rem;
+}
+
+.dialog-body[b-34gsuivj45] {
+    flex-grow: 1;
+    padding: 0.5rem 3rem 1rem 0;
+}
+
+.dialog-buttons[b-34gsuivj45] {
+    height: 4rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    padding: 0 1rem;
+}
+
+.dialog-body > div[b-34gsuivj45] {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.dialog-body label[b-34gsuivj45] {
+    text-align: right;
+    width: 200px;
+    margin: 0 1.5rem;
+}
+
+.dialog-body input[b-34gsuivj45], .dialog-body select[b-34gsuivj45] {
+    flex-grow: 1;
+    width: unset;
+}
+
+.dialog-body .size-label[b-34gsuivj45] {
+    min-width: 110px;
+    text-align: right;
+}
+/* _content/BlazorAppProject/Components/Pages/PizzaStore/MyOrders.razor.rz.scp.css */
+/* _content/BlazorAppProject/Components/Pages/PizzaStore/PizzaStore.razor.rz.scp.css */
+.pizza-store-content[b-063o3btf68] {
+    display: flex;
+    z-index: 1;
+}
+
+.main[b-063o3btf68] {
+    flex-grow: 1;
+    overflow-y: auto;
+    background: linear-gradient(rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 80%);
+    padding: 1.5rem !important;
+}
+
+.user-info[b-063o3btf68] {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-info img[b-063o3btf68] {
+    margin-right: 0.7rem;
+    width: 2.6rem;
+}
+
+.user-info .username[b-063o3btf68] {
+    display: block;
+    font-weight: 700;
+    line-height: 0.7rem;
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.user-info a[b-063o3btf68] {
+    color: #fff2cc;
+    font-size: 0.8rem;
+}
+
+.user-info button.sign-out[b-063o3btf68] {
+    color: #fff2cc;
+    font-size: 0.8rem;
+    padding: 0;
+}
+
+.pizza-cards[b-063o3btf68] {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20rem);
+    grid-gap: 2rem;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.pizza-cards > li[b-063o3btf68] {
+    height: 10rem;
+    position: relative;
+    background-size: cover;
+    border-radius: 0.5rem;
+    list-style-type: none;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.4);
+    transition: 0.1s ease-out;
+}
+
+.pizza-cards > li:hover[b-063o3btf68] {
+    transform: scale(1.02);
+}
+
+.pizza-info[b-063o3btf68] {
+    border-radius: 0.5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba(0,0,0,0.7) 30%, rgba(0,0,0,0) 80%);
+    padding: 1rem 1rem;
+    color: #fff2cc;
+    cursor: pointer;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+    line-height: 1.25rem;
+}
+
+.pizza-info .title[b-063o3btf68] {
+    color: white;
+    font-size: 1.4rem;
+    display: block;
+    margin: 0.2rem 0 0.4rem 0;
+    font-family: 'Bahnschrift', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.pizza-info .price[b-063o3btf68] {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0rem 0.7rem;
+    border-radius: 4px;
+    background-color: #08af08;
+    color: white;
+    line-height: 2rem;
+}
+
+.price[b-063o3btf68]::before {
+    content: '£';
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-right: 0.2rem;
+}
+
+.pizza-store-sidebar[b-063o3btf68] {
+    background-color: #2b2b2b;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.order-contents[b-063o3btf68] {
+    overflow-y: auto;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    flex-grow: 1;
+}
+
+.order-contents h2[b-063o3btf68] {
+    color: #fff2cc;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-family: 'Bahnschrift', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.order-total[b-063o3btf68] {
+    background-color: rgb(191, 52, 52);
+    height: 4rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    padding: 0 1.5rem;
+}
+
+.order-total.hidden[b-063o3btf68] {
+    transform: translate3d(0, 4rem, 0);
+}
+
+.order-total .total-price[b-063o3btf68] {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+    .order-total .total-price[b-063o3btf68]::before {
+        content: '£';
+        font-weight: 300;
+        margin: 0 0.1rem 0 0.4rem;
+    }
+
+.order-total .btn[b-063o3btf68] {
+    margin-left: auto;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 0.4rem 1.2rem;
+}
+
+.cart-item[b-063o3btf68] {
+    background-color: #333333;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 100;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.cart-item .title[b-063o3btf68] {
+    font-weight: 700;
+}
+
+.cart-item ul[b-063o3btf68] {
+    padding: 0;
+    margin: 0.4rem 0.6rem;
+}
+
+.cart-item li[b-063o3btf68] {
+    list-style-type: none;
+    margin-left: 0rem;
+    font-size: 0.8rem;
+}
+
+.empty-cart[b-063o3btf68] {
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #676767;
+}
+
+.item-price[b-063o3btf68] {
+    font-weight: 500;
+}
+
+.item-price[b-063o3btf68]::before {
+    content: '£';
+    font-weight: 100;
+    margin-right: 0.3rem;
+}
+
+.delete-item[b-063o3btf68] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: 'X';
+    cursor: pointer;
+    color: #fff2cc;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.delete-item:hover[b-063o3btf68] {
+    text-decoration: none;
+    color: #fff2cc;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.configured-pizza-item[b-063o3btf68] {
+    display: flex;
+    flex-direction: row;
+}
+
+.dialog .toppings[b-063o3btf68] {
+    text-align: center;
+    display: block;
+    padding-left: 4rem;
+}
+
+.dialog .topping[b-063o3btf68] {
+    display: inline-block;
+    background-color: #a04343;
+    color: white;
+    padding: 0.2rem 1rem;
+    border-radius: 2rem;
+    margin: 0.4rem 0.3rem;
+    font-weight: 700;
+}
+
+.dialog .topping-price[b-063o3btf68] {
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+    .dialog .topping-price[b-063o3btf68]::before {
+        content: '£';
+    }
+
+.delete-topping[b-063o3btf68] {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0.2rem 0.2rem 0.3rem 0.2rem;
+    cursor: pointer;
+}
+
+.delete-topping:hover[b-063o3btf68] {
+    color: yellow;
+}
+
+.form-message[b-063o3btf68] {
+    padding: 0.5rem;
+    font-weight: 700;
+}
+
+.dialog .price[b-063o3btf68] {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.orders-list .list-group-item[b-063o3btf68] {
+    display: flex;
+}
+
+.orders-list .col[b-063o3btf68] {
+    margin: auto;
+}
+
+.orders-list h5[b-063o3btf68] {
+    color: #c03939;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 0.2rem 0 0 0;
+    font-family: 'Bahnschrift', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.track-order[b-063o3btf68] {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.track-order > div[b-063o3btf68] {
+    overflow-y: hidden;
+}
+
+.track-order-title[b-063o3btf68] {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.track-order-title h2[b-063o3btf68] {
+    color: #c03939;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 0rem;
+    font-family: 'Bahnschrift', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.track-order-body[b-063o3btf68] {
+    flex-grow: 1;
+    display: flex;
+}
+
+.track-order-details[b-063o3btf68] {
+    overflow-y: auto;
+    padding: 1.5rem 3rem;
+    flex-grow: 1;
+}
+
+.track-order-map[b-063o3btf68] {
+    width: 350px;
+    flex-shrink: 0;
+}
+
+a.sign-in[b-063o3btf68] {
+    background: none;
+    border: 1.5px solid white;
+    border-radius: 0.7em;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.2rem 0.8rem 0.1rem 0.8rem;
+    font-family: 'Bahnschrift', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    margin-left: 3px;
+}
+
+a.sign-in:hover[b-063o3btf68] {
+    background-color: rgba(255,255,255,0.3);
+    color: #fff2cc;
+    border-color: #fff2cc;
+}
+
+input[type=range][b-063o3btf68] {
+    -webkit-appearance: none;
+    margin: 7.1px 0;
+    height: 21px;
+}
+
+input[type=range]:focus[b-063o3btf68] {
+    outline: none;
+}
+
+input[type=range][b-063o3btf68]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5.8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+    background: #dcdcdc;
+    border-radius: 1.3px;
+    border: 0px solid #010101;
+}
+
+input[type=range][b-063o3btf68]::-webkit-slider-thumb {
+    box-shadow: 0.9px 0.9px 1px rgba(0, 0, 49, 0.43), 0px 0px 0.9px rgba(0, 0, 75, 0.43);
+    border: 0px solid #00001e;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #d45352;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7.1px;
+}
+
+input[type=range]:focus[b-063o3btf68]::-webkit-slider-runnable-track {
+    background: #e1e1e1;
+}
+
+input[type=range][b-063o3btf68]::-moz-range-track {
+    width: 100%;
+    height: 5.8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+    background: #dcdcdc;
+    border-radius: 1.3px;
+    border: 0px solid #010101;
+}
+
+input[type=range][b-063o3btf68]::-moz-range-thumb {
+    box-shadow: 0.9px 0.9px 1px rgba(0, 0, 49, 0.43), 0px 0px 0.9px rgba(0, 0, 75, 0.43);
+    border: 0px solid #00001e;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #d45352;
+    cursor: pointer;
+}
+
+input[type=range][b-063o3btf68]::-ms-track {
+    width: 100%;
+    height: 5.8px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range][b-063o3btf68]::-ms-fill-lower {
+    background: #d7d7d7;
+    border: 0px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+}
+
+input[type=range][b-063o3btf68]::-ms-fill-upper {
+    background: #dcdcdc;
+    border: 0px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+}
+
+input[type=range][b-063o3btf68]::-ms-thumb {
+    box-shadow: 0.9px 0.9px 1px rgba(0, 0, 49, 0.43), 0px 0px 0.9px rgba(0, 0, 75, 0.43);
+    border: 0px solid #00001e;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #d45352;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.loading-bar[b-063o3btf68] {
+    position: absolute;
+    top: calc(50% - 3px);
+    left: calc(50% - 250px);
+    width: 500px;
+    height: 6px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2)
+}
+
+.loading-bar[b-063o3btf68]::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 100%;
+    background-color: #dc105a;
+    animation: progressbar-slide-b-063o3btf68 1s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.form-field[b-063o3btf68] {
+    display: flex;
+    margin: 0.5rem;
+}
+
+.form-field > label[b-063o3btf68] {
+    width: 8rem;
+}
+
+.form-field > div[b-063o3btf68] {
+    flex-grow: 1;
+}
+
+.form-field input[b-063o3btf68] {
+    width: 100%;
+}
+
+.valid.modified:not([type=checkbox])[b-063o3btf68] {
+    outline: 1px solid #26b050;
+}
+
+.invalid[b-063o3btf68] {
+    outline: 1px solid red;
+}
+
+.validation-message[b-063o3btf68] {
+    color: red;
+}
+
+#blazor-error-ui[b-063o3btf68] {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss[b-063o3btf68] {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+
+@keyframes progressbar-slide-b-063o3btf68 {
+    0% {
+        transform: translateX(-200px);
+    }
+
+    70% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(500px);
+    }
+}
+/* _content/BlazorAppProject/Components/Pages/PizzaStore/PizzaStoreNavMenu.razor.rz.scp.css */
+.top-bar[b-sdmm1fexry] {
+    height: 5rem;
+    background-color: rgb(192,0,0);
+    background-image: linear-gradient(rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 70%);
+    display: flex;
+    align-items: stretch;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    padding: 0 3rem;
+}
+
+.logo[b-sdmm1fexry] {
+    display: flex;
+}
+
+.logo > img[b-sdmm1fexry] {
+    margin-right: 3rem;
+    width: 9rem;
+}
+
+a.nav-tab[b-sdmm1fexry] {
+    margin: 0;
+    padding: 0.3rem 1.8rem;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.2s ease-out;
+}
+
+.nav-tab:hover[b-sdmm1fexry] {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.nav-tab.active[b-sdmm1fexry] {
+    background-color: rgba(255,255,255,0.2);
+    color: #fff2cc;
+}
+
+.nav-tab img[b-sdmm1fexry] {
+    height: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+.nav-tab.active img[b-sdmm1fexry] {
+    filter: brightness(0) saturate(100%) invert(93%) sepia(18%) saturate(797%) hue-rotate(316deg) brightness(109%) contrast(101%);
+}
+
+.nav-tab.active[b-sdmm1fexry]:after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    z-index: 1;
+    width: 0px;
+    height: 0px;
+    border-left: 0.6rem solid transparent;
+    border-right: 0.6rem solid transparent;
+    border-top: 1rem solid rgb(205,51,51);
+}
